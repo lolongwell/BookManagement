@@ -19,6 +19,42 @@
     box-shadow: 10rpx 10rpx 5rpx #CCC;
     text-align: center;
     font-size: 30rpx;
-    color: #fff;
     line-height: 150rpx;
+    color: rgb(241, 32, 32);
+}
+.app-cell:nth-child(1) {
+    background-image: url('http://bpic.588ku.com/back_pic/04/20/53/93582e52886c003.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(2) {
+    background-image: url('https://bpic.588ku.com/back_origin_min_pic/18/06/09/ba0879cb77e0f211e9081580ac67daf4.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(3) {
+    background-image: url('http://bpic.588ku.com/master_pic/00/11/34/235690b7fd6a6ef.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(4) {
+    background-image: url('http://bpic.588ku.com/master_pic/00/11/23/58568b9678064d2.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(5) {
+    background-image: url('http://bpic.588ku.com/back_pic/04/06/38/34580fdde455d1a.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(6) {
+    background-image: url('http://bpic.588ku.com/back_pic/04/02/08/2758033861ca362.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(7) {
+    background-image: url('http://bpic.588ku.com/back_pic/05/00/89/61594a143b0848d.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(8) {
+    background-image: url('http://bpic.588ku.com/back_pic/04/07/10/915811670c2f971.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
+}
+.app-cell:nth-child(9) {
+    background-image: url('http://bpic.588ku.com/back_pic/03/93/95/6857e7a77ce94e7.jpg!/fw/260/quality/90/unsharp/true/compress/true');
+    background-size: contain;
 }
