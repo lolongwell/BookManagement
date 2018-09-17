@@ -1,0 +1,20 @@
+<view class="main-container">
+    <scroll-view class="book-list"scroll-y="true">
+        <view class="book-item" wx:for="{{bookList}}" wx:key="{{item.isbncode}}">
+            <view class="{{item.checkStyle}}" bindtap="changeStatus" data-index="{{index}}" data-item="{{item}}">√</view>
+            <view class="book-name">{{item.bookname}}</view>
+            <view class="book-info">
+                <view class="book-msg">作者: {{item.author}}</view>
+                <view class="book-msg">编号: {{item.bookcode}}</view>
+                <view class="book-msg">ISBN: {{item.isbncode}}</view>
+            </view>
+        </view>
+        <view class="fixed-btn">
+            <view class="allcheck">
+                <view class="{{checkStyle}}" bindtap="allCheck">√</view>
+                <view class="text">全选</view>
+            </view>
+            <button class="return-book" bindtap="giveBack">确认还书</button>
+        </view>   
+    </scroll-view>
+</view>

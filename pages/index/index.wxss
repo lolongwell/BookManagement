@@ -1,0 +1,24 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.main image, .content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.app-cell {
+    height: 150rpx; 
+    width: 150rpx; 
+    margin: 20rpx; 
+    border-radius: 5px; 
+    background: rgba(120, 133, 255, .9); 
+    box-shadow: 10rpx 10rpx 5rpx #CCC;
+    text-align: center;
+    font-size: 30rpx;
+    color: #fff;
+    line-height: 150rpx;
+}

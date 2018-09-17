@@ -1,0 +1,40 @@
+<!--pages/books-list/books-list.wxml-->
+<view class="main-container">
+
+    <view class="books">
+        <view class="book-pic">
+            <image src="../../images/book.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="book-msg">
+            <view class="book-name">
+                {{bookMsg.bookname}}
+            </view>
+            <view class="book-author">
+                作者：{{bookMsg.author}}
+            </view>
+            <view class="book-code">
+                编号：{{bookMsg.bookcode}}
+            </view>
+            <view class="book-isbn">
+                ISBN: {{bookMsg.isbncode}}
+            </view>
+        </view>
+    </view>
+    <view class="introduce">
+        <text class="intro">《内容简介》： </text>
+        <text class="content">{{bookMsg.introduction}}</text>
+    </view>
+    <view class="afterRead">
+        <view class="intro" style="margin-bottom: 20rpx;">《读后感》： </view>
+        <scroll-view 
+            class="afterRead-list" 
+            scroll-y="true" 
+        >
+            <view class="user" wx:for="{{impressions}}" wx:key="index">
+                <text class="userName">{{item.userid}} 说： </text>
+                <text class="content">{{item.impressions}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <button style="background:#00c9a9;color: #fff;" class="borrowBtn" bindtap="borrowBtn">我要借书</button>
+</view>

@@ -1,0 +1,62 @@
+page {
+    background-color: #fff;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+.books {
+    width: 100%;
+    height: 300rpx;
+    margin-top: 10px;
+    padding: 20rpx;
+    /* background: rgb(187, 187, 167); */
+    border-bottom: 1px solid #ccc;
+}
+.book-pic {
+    float: left;
+    height: 300rpx;
+    width: 300rpx;
+}
+.book-pic image {
+    height: 300rpx;
+    margin-left: -200rpx;
+}
+.book-msg {
+    float: left;
+    height: 260rpx;
+    padding: 20rpx;
+    padding-right: 60rpx;
+    font-size: 30rpx;
+}
+.book-msg view {
+    padding: 10rpx 0;
+}
+.book-name {
+    font-size: 35rpx;
+    color: red;
+}
+.introduce, .afterRead {
+    padding: 20rpx;
+}
+.intro, .userName {
+    margin-left: 40rpx;
+    font-size: 27rpx;
+}
+.afterRead-list {
+    height: 500rpx;
+    border: 1px dashed #ccc;
+    background: #acece2;
+    border-radius: 10px;
+}
+.user {
+    margin-bottom: 20rpx;
+}
+.content {
+    font-size: 27rpx;
+}
+
+.borrowBtn {
+    margin: 20rpx;
+}

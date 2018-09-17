@@ -1,0 +1,35 @@
+<!--pages/user/user.wxml-->
+<view class="main-container">
+
+    <!--用户信息-->
+    <view class="user-container">
+        <view class="userAvatar"><open-data type="userAvatarUrl"></open-data></view>
+        <view class="userNick"><open-data type="userNickName"></open-data></view>
+        <!-- <view class="userGender"><open-data type="userGender"></open-data></view> -->
+    </view>
+
+    <!--设置选项-->
+    <view class="set-container">
+        <view class="set-card" bindtap="userHistoryBtn">
+            <image src="/images/setting/history.png" />
+            <view class="name">借阅历史</view>
+            <view class="arrow">></view>
+        </view>
+        <view class="set-card" bindtap="userCommentBtn">
+            <image src="/images/setting/comment.png" />
+            <view class="name">我的说说</view>
+            <view class="arrow">></view>
+        </view>
+        <!-- <view class="set-card" bindtap="userSettingBtn">
+            <image src="/images/setting/set.png" />
+            <view class="name">账号设置</view>
+            <view class="arrow">></view>
+        </view> -->
+        <view class="set-card" bindtap="exitBtnOnClick">
+            <image src="/images/setting/exit.png" />
+            <view class="name">退出登录</view>
+            <view class="arrow">></view>
+        </view>
+    </view>
+
+</view>

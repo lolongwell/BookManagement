@@ -1,0 +1,107 @@
+/* pages/user-comment/user-comment.wxss */
+
+page {
+    background-color: rgb(243, 243, 243);
+}
+
+.main-container {
+    width: 100%;
+}
+
+.comment {
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 32rpx;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.content {
+    font-size: 28rpx;
+    line-height: 2em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.edit {
+    height: 40rpx;
+    padding: 0 10rpx;
+    font-size: 24rpx;
+    text-align: center;
+    color: #4db6ac;
+    border-radius: 5rpx;
+    line-height: 40rpx;
+    float: right;
+    margin-right: 10px;
+    border: 1px solid #4db6ac;
+    margin-top: 10px;
+}
+.addBtn {
+    position: fixed;
+    bottom: 60rpx;
+    left: 50%;
+    width: 100rpx;
+    height: 100rpx;
+    margin: -50rpx;
+    border-radius: 50%;
+    background: #00c9a9; 
+    color: #fff;
+    font-size: 80rpx; 
+    text-align: center;
+    line-height: 90rpx;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.model {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.model-content {
+    width: 80%;
+    height: 60%;
+    padding: 4%;
+    margin: 32% auto;
+    background: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+.cancel {
+    position: absolute;
+    top: 20rpx;
+    right: 40rpx;
+    color: #666;
+}
+.shuoshuo {
+    position: absolute;
+    top: 150rpx;
+    left: 20rpx;
+    width: 90%;
+}
+.shuoshuo textarea {
+    padding: 20rpx;
+    font-size: 26rpx;
+    width: 90%;
+    border: 1rpx solid #ccc;
+    border-radius: 8px;
+}
+.sure {
+    position: absolute;
+    bottom: 100rpx;
+    left: 50%;
+    width: 200rpx;
+    margin-left: -100rpx;
+    background: #00c9a9;
+    color: #fff;
+    font-size: 26rpx;
+}

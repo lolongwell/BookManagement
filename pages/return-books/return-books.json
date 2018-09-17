@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#00c9a9",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTitleText": "我要还书"
+}

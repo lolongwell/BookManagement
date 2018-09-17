@@ -1,0 +1,50 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/login/login",
+		"pages/main/main",
+		"pages/books-detail/books-detail",
+		"pages/borrow-books/borrow-books",
+		"pages/return-books/return-books",
+		"pages/user/user",
+		"pages/user-history/user-history",
+		"pages/user-comment/user-comment"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#7885ff",
+		"navigationBarTitleText": "普罗格-应用中心",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/main/main",
+				"text": "书库",
+				"iconPath": "images/tabBar/main_0.png",
+				"selectedIconPath": "images/tabBar/main_1.png"
+			},
+			{
+				"pagePath": "pages/borrow-books/borrow-books",
+				"text": "借书",
+				"iconPath": "images/tabBar/books_0.png",
+				"selectedIconPath": "images/tabBar/books_1.png"
+			},
+			{
+				"pagePath": "pages/return-books/return-books",
+				"text": "还书",
+				"iconPath": "images/tabBar/books_0.png",
+				"selectedIconPath": "images/tabBar/books_1.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "用户",
+				"iconPath": "images/tabBar/user_0.png",
+				"selectedIconPath": "images/tabBar/user_1.png"
+			}
+		],
+		"borderStyle": "white",
+		"selectedColor": "#00c9a9",
+		"color": "#999"
+	}
+}

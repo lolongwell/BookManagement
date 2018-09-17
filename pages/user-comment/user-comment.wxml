@@ -1,0 +1,26 @@
+<!--pages/user-comment/user-comment.wxml-->
+<scroll-view class="main-container">
+
+    <view class="comment" wx:for="{{comments}}" wx:key="{{item.BORROWACCNO + index}}">
+        <view class="edit" catchtap="editBtn" data-item="{{item}}">读后感</view>
+        <view class="title">《{{item.BOOKNAME}}》：</view>
+        <view class="content">{{item.IMPRESSIONS}}</view>
+    </view>
+
+    <view wx:if="{{comments.length == 0}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无说说</view>
+
+    <!-- 添加按钮 -->
+    <!-- <view class="addBtn" bindtap="addComment">+</view> -->
+
+    <view class="model" wx:if="{{isShow}}">
+        <view class="model-content">
+            <view class="cancel" bindtap="cancelBtn">
+                X
+            </view>
+            <view class="shuoshuo">
+                <textarea placeholder="读后感..." maxlength="-1" fixed show-confirm-bar bindinput="editcomment"></textarea>
+            </view>
+            <button class="sure" bindtap="addComment">添  加</button>
+        </view>
+    </view>
+</scroll-view>

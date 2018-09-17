@@ -1,0 +1,53 @@
+<!--pages/books/books.wxml-->
+<view class="main-container">
+
+    <!--沉浸式图书搜索-->
+    <view class="search-container">
+        <view class="books-search-container">
+            <icon type="search" size="18" />
+            <input placeholder="书籍信息" bindconfirm="searchBook" bindinput="bindInputSel"/>
+        </view>
+        <view class="classify">
+            <view class="view-list" bindtap="viewAllList"> {{listName}} </view>
+            <view class="model" wx:if="{{isShow}}" bindtap="turnOff">
+                <scroll-view 
+                    class="model-content" 
+                    scroll-y="true">
+                    <view 
+                        wx:for="{{classifyOnes}}" 
+                        wx:for-index="idx" 
+                        wx:for-item="classifyOne" 
+                        wx:key="idx" 
+                        class="classify-item"
+                        bindtap="chooseClassify"
+                        >
+                        <view class="point"></view>
+                        <text class="name">{{classifyOne}}</text>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+    <view style="width: 100%;height: 50px;"></view>
+    <!--分类列表-->
+    <view class="books" bindtap="bookDetail" wx:for="{{booklist}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-msg="{{item}}">
+       <view class="book-pic">
+           <image src="../../images/book.jpg" mode="aspectFit"></image>
+       </view>
+       <view class="book-msg">
+            <view class="book-name" id="book-name">
+                {{item.bookname}}
+            </view>
+            <view class="book-author">
+                作者：{{item.author}}
+            </view>
+            <view class="book-code">
+                编号：{{item.bookcode}}
+            </view>
+            <view class="book-isbn">
+                ISBN: {{item.isbncode}}
+            </view>
+       </view>
+    </view>
+
+</view>

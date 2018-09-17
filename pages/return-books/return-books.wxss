@@ -1,0 +1,69 @@
+.main-container, .book-list {
+    width: 100vw;
+    height: 100vh;
+}
+.book-item {
+    padding: 20rpx 0;
+    border-bottom: 1rpx solid #f4f4f4;
+    width: 100vw;
+    height: 150rpx;
+    position: relative;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 25rpx;
+    border-radius: 20rpx;
+    color: #fff;
+    border: 1rpx solid #ccc;
+    background: #fff;
+    
+}
+.icon-active {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx;
+    line-height: 40rpx;
+    text-align: center;
+    font-size: 25rpx;
+    border-radius: 20rpx;
+    color: #fff;
+    border: 1rpx solid #ccc;
+    background: #00c9a9;
+}
+.book-name {
+    margin: 0 20rpx;
+    width: 40vw;
+    overflow: hidden;
+    color: red;
+}
+.book-info {
+   margin: 0 30rpx;
+}
+.fixed-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.allcheck {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30rpx;
+}
+.return-book {
+    background: #00c9a9;
+    color: white;
+    margin-right: 20rpx;
+}
