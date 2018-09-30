@@ -10,23 +10,28 @@
     left: 0;
     top: 0;
 }
+.content {
+    padding: 10vw 3vw;
+    height: 80vh;
+}
 .app-cell {
-    height: 150rpx; 
-    width: 150rpx; 
-    margin: 20rpx; 
+    float: left;
+    height: 25vw;
+    width: 25vw;
+    margin: 3vw;
     border-radius: 5px; 
-    background: rgba(120, 133, 255, .9); 
+    background: rgb(9, 89, 167);
     box-shadow: 10rpx 10rpx 5rpx #CCC;
     text-align: center;
     font-size: 30rpx;
-    line-height: 150rpx;
-    color: rgb(241, 32, 32);
+    line-height: 25vw;
+    color: #fff;
 }
 .app-cell:nth-child(1) {
     background-image: url('http://bpic.588ku.com/back_pic/04/20/53/93582e52886c003.jpg!/fw/260/quality/90/unsharp/true/compress/true');
     background-size: contain;
 }
-.app-cell:nth-child(2) {
+/* .app-cell:nth-child(2) {
     background-image: url('https://bpic.588ku.com/back_origin_min_pic/18/06/09/ba0879cb77e0f211e9081580ac67daf4.jpg!/fw/260/quality/90/unsharp/true/compress/true');
     background-size: contain;
 }
@@ -57,4 +62,4 @@
 .app-cell:nth-child(9) {
     background-image: url('http://bpic.588ku.com/back_pic/03/93/95/6857e7a77ce94e7.jpg!/fw/260/quality/90/unsharp/true/compress/true');
     background-size: contain;
-}
+} */

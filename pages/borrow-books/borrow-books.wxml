@@ -5,10 +5,14 @@
     </view>
 </view>
 <view class="pic">
-    <image src="../../images/sell_intro_2.png" mode="aspectFit"></image>
-    <view class="txt" style="color: #00c9a9">
-        借书准则
+    <image src="../../images/timg1.jpg" mode="aspectFit"></image>
+    <view class="txt">
+        借书准则>
+        <view class="txt1">1、爱护书籍，人人有责</view>
+        <view class="txt1">2、好借好还，再借不难</view>
+        <view class="txt1">3、气有浩然，学无止境</view>
     </view>
+    
 </view>
 <view class="search-container">
     <view class="scan-btn" bindtap="scanBtnOnClick"><i> + </i>扫码借书</view>

@@ -5,27 +5,48 @@ Page({
         impressions: []
     },
     onLoad: function(option){
-        // console.log(option)
+        var authorization = getApp().globalData.authorization
         var that = this;
         wx.request({
             url: getApp().globalData.url + '/role/getDetailByBookId',
             data: {isbncode: option.isbncode},
             method: 'GET',
+            header: {
+                'content-type': 'application/json',
+				'authorization': authorization
+            },
             success: function (res) {
-                // console.log(res)
-                that.setData({
-                    bookMsg: res.data.data,
-                    impressions: res.data.data.dto
-                })
+                if (res.data.success) {
+                    that.setData({
+                        bookMsg: res.data.data,
+                        impressions: res.data.data.dto
+                    })
+                } else {
+                    wx.showToast({
+                      title: '书库暂无此书，请核对ISBN码', 
+                      icon: 'none',
+                      duration: 2000
+                    });
+                    setTimeout(function () {
+                        wx.navigateBack({
+                            delta: 1
+                        });
+                    }, 2000)
+                }
             }
         })
     },
     borrowBtn: function () {
         var that = this
+        var authorization = getApp().globalData.authorization
         wx.request({
             url: getApp().globalData.url + '/borrow/borrowBook',
-            data: {userid: 'xiongt', isbncode: that.data.bookMsg.isbncode},
+            data: {userid: '', isbncode: that.data.bookMsg.isbncode},
             method: 'POST',
+            header: {
+                'content-type': 'application/json',
+				'authorization': authorization
+            },
             success: function (res) {
                 if (res.data.success) {
                     wx.showToast({
@@ -47,7 +68,6 @@ Page({
                         duration: 2000
                     })
                 }
-                
             }
         })
     }

@@ -17,6 +17,7 @@ page {
     position: fixed;
     display: flex;
     flex-direction: row;
+    z-index: 99;
 }
 
 .books-search-container {
@@ -38,6 +39,7 @@ page {
     height: 60rpx;
     background: #fff;
     border-radius: 0px 5px 5px 0px;
+    font-size: 26rpx;
 }
 
 .classify {
@@ -59,34 +61,52 @@ page {
 
 /* 分类列表样式 */
 .books {
-    width: 100%;
-    height: 250rpx;
-    margin-top: 10rpx;
-    padding: 10rpx;
+    width: 100vw;
+    height: 130px;
+    padding: 5px 0;
     border-bottom: 1px solid #ccc;
 }
 .book-pic {
     float: left;
-    height: 250rpx;
-    width: 250rpx;
+    height: 130px;
+    width: 100px;
 }
-.book-pic image {
+/* .book-pic image {
     height: 250rpx;
-    margin-left: -200rpx;
+    margin-left: -100px;
+} */
+.book-image {
+    width: 90px;
+    height: 130px;
+    margin-left: 10px;
+    /* border: 1rpx solid #ccc; */
+    background: #0099CC;
+    font-size: 25rpx;
+    border-radius: 5px;
+    position: relative;
+}
+.book-image text {
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 .book-msg {
     float: left;
-    height: 230rpx;
-    padding: 10rpx;
-    padding-right: 80rpx;
+    height: 130px;
+    padding: 5px 0;
+    margin-left: 10px;
     font-size: 26rpx;
 }
 .book-msg view {
     padding: 10rpx;
 } 
 .book-name {
-    font-size: 30rpx;
-    color: red;
+    font-size: 26rpx;
+    color: #0099CC;
 }
 /* 分类列表样式end */
 .model {

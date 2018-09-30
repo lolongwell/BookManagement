@@ -42,10 +42,12 @@
     margin: 0 20rpx;
     width: 40vw;
     overflow: hidden;
-    color: red;
+    color: #0099CC;
+    font-size: 26rpx;
 }
 .book-info {
    margin: 0 30rpx;
+   font-size: 26rpx;
 }
 .fixed-btn {
     position: fixed;

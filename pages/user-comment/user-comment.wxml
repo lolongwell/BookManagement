@@ -3,11 +3,11 @@
 
     <view class="comment" wx:for="{{comments}}" wx:key="{{item.BORROWACCNO + index}}">
         <view class="edit" catchtap="editBtn" data-item="{{item}}">读后感</view>
-        <view class="title">《{{item.BOOKNAME}}》：</view>
+        <view class="title">{{item.BORROWDATE}}  《{{item.BOOKNAME}}》：</view>
         <view class="content">{{item.IMPRESSIONS}}</view>
     </view>
 
-    <view wx:if="{{comments.length == 0}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无说说</view>
+    <view wx:if="{{hasData}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无借阅</view>
 
     <!-- 添加按钮 -->
     <!-- <view class="addBtn" bindtap="addComment">+</view> -->

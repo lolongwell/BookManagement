@@ -8,10 +8,15 @@ Page({
     },
     onShow () {
         var that = this;
+        var authorization = getApp().globalData.authorization
         wx.request({
             url: getApp().globalData.url + '/return/restMessage',
-            data: {userid: 'xiongt'},
+            data: {userid: ''},
             method: 'GET',
+            header: {
+                'content-type': 'application/json',
+				'authorization': authorization
+            },
             success: function (res) {
                 // 遍历所有已借的书，添加字段checkStyle,用于控制自身的选中样式
                 var bookList = res.data.data
@@ -29,6 +34,7 @@ Page({
             returnBooks: [],
             checkStyle: 'icon'
         })
+        sum = 0;
     },
     changeStatus: function (e) {
         /**
@@ -94,6 +100,7 @@ Page({
     },
     giveBack () {
         var {bookList, returnBooks} = this.data
+        var authorization = getApp().globalData.authorization
         var that = this
         var indexs = []
         var param = []
@@ -109,6 +116,10 @@ Page({
             url: getApp().globalData.url + '/return/returnBook',
             data: param,
             method: 'POST',
+            header: {
+                'content-type': 'application/json',
+				'authorization': authorization
+            },
             success: function (res) {
                 if (res.data.success) {
                     wx.showToast({

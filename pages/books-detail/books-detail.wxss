@@ -8,7 +8,7 @@ page {
 }
 .books {
     width: 100%;
-    height: 300rpx;
+    height: 130px;
     margin-top: 10px;
     padding: 20rpx;
     /* background: rgb(187, 187, 167); */
@@ -16,26 +16,45 @@ page {
 }
 .book-pic {
     float: left;
-    height: 300rpx;
-    width: 300rpx;
+    height: 130rpx;
+    width: 100px;
 }
-.book-pic image {
+/* .book-pic image {
     height: 300rpx;
-    margin-left: -200rpx;
+    margin-left: -100px;
+} */
+.book-image {
+    width: 90px;
+    height: 130px;
+    margin-left: 10px;
+    /* border: 1rpx solid #ccc; */
+    background: #0099CC;
+    font-size: 26rpx;
+    border-radius: 5px;
+    position: relative;
+}
+.book-image text {
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 .book-msg {
     float: left;
-    height: 260rpx;
-    padding: 20rpx;
-    padding-right: 60rpx;
-    font-size: 30rpx;
+    height: 130px;
+    padding: 5px 0;
+    margin-left: 10px;
+    font-size: 26rpx;
 }
 .book-msg view {
-    padding: 10rpx 0;
-}
+    padding: 10rpx;
+} 
 .book-name {
-    font-size: 35rpx;
-    color: red;
+    font-size: 26rpx;
+    color: #0099CC;
 }
 .introduce, .afterRead {
     padding: 20rpx;
@@ -45,7 +64,7 @@ page {
     font-size: 27rpx;
 }
 .afterRead-list {
-    height: 500rpx;
+    height: 50vh;
     border: 1px dashed #ccc;
     background: #acece2;
     border-radius: 10px;
@@ -59,4 +78,6 @@ page {
 
 .borrowBtn {
     margin: 20rpx;
+    background:#00c9a9;
+    color: #fff;
 }

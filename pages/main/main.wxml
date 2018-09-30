@@ -32,7 +32,8 @@
     <!--分类列表-->
     <view class="books" bindtap="bookDetail" wx:for="{{booklist}}" wx:for-item="item" wx:for-index="index" wx:key="index" data-msg="{{item}}">
        <view class="book-pic">
-           <image src="../../images/book.jpg" mode="aspectFit"></image>
+           <!-- <image src="../../images/book.jpg" mode="aspectFit"></image> -->
+           <view class="book-image"><text>{{item.bookname}}</text></view>
        </view>
        <view class="book-msg">
             <view class="book-name" id="book-name">

@@ -8,7 +8,6 @@ Page({
 		wx.scanCode({
 			// onlyFromCamera: true,
 			success: function (res) {
-				console.log(res)
 				wx.navigateTo({
 					url: '/pages/books-detail/books-detail?isbncode=' + res.result
 				})

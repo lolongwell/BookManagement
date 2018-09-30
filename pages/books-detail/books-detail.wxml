@@ -3,7 +3,8 @@
 
     <view class="books">
         <view class="book-pic">
-            <image src="../../images/book.jpg" mode="aspectFit"></image>
+            <!-- <image src="../../images/book.jpg" mode="aspectFit"></image> -->
+            <view class="book-image"><text>{{bookMsg.bookname}}</text></view>
         </view>
         <view class="book-msg">
             <view class="book-name">
@@ -31,10 +32,10 @@
             scroll-y="true" 
         >
             <view class="user" wx:for="{{impressions}}" wx:key="index">
-                <text class="userName">{{item.userid}} 说： </text>
+                <text class="userName">{{item.username}} 说： </text>
                 <text class="content">{{item.impressions}}</text>
             </view>
         </scroll-view>
     </view>
-    <button style="background:#00c9a9;color: #fff;" class="borrowBtn" bindtap="borrowBtn">我要借书</button>
+    <button class="borrowBtn" bindtap="borrowBtn">我要借书</button>
 </view>

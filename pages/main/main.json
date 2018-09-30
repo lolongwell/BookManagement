@@ -2,5 +2,6 @@
     "navigationBarBackgroundColor": "#00c9a9",
     "navigationBarTextStyle": "white",
     "backgroundColor": "#eeeeee",
-    "navigationBarTitleText": "微图书"
+    "navigationBarTitleText": "微图书",
+    "onReachBottomDistance": 20
 }

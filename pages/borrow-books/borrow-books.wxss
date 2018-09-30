@@ -6,10 +6,15 @@
 }
 .txt {
     position: absolute;
-    right: 20%;
-    top: 40%;
-    /* color: #00c9a9; */
+    left: 55%;
+    top: 30%;
+    color: #00c9a9;
     font-size: 40rpx;
+}
+.txt1 {
+    font-size: 26rpx;
+    color: black;
+    margin: 10px 0;
 }
 /* 沉浸式图书搜索样式 */
 .search-container {

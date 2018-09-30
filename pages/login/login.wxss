@@ -63,3 +63,9 @@ page {
     font-size: 32rpx;
     margin-bottom: 5px;
 }
+progress {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}

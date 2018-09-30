@@ -3,5 +3,5 @@
     <view class="card" wx:for="{{history}}" wx:for-item="h" wx:key="{{h.DOTIME + index}}">
         <view>{{h.DOTIME}}， {{h.DOTYPE}} : 《{{h.BOOKNAME}}》</view>
     </view>
-    <view wx:if="{{history.length == 0}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无借阅历史</view>
+    <view wx:if="{{hasData}}" style="color:#666; font-size:32rpx; text-align:center; margin-top:100px;">暂无借阅动态</view>
 </view>

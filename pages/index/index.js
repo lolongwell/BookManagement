@@ -1,7 +1,7 @@
 Page({
     data: {
-        x: 40,
-        y: 100
+        x: 0,
+        y: 0
     },
     gotoMicbooks: () => {
         wx.navigateTo({

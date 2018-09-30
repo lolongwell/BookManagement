@@ -1,25 +1,14 @@
 <view class="main">
     <image src="../../images/startUpPic.png"></image>
-    <movable-area class="content">
-        <movable-view class="app-cell" x="{{x}}" y="{{y}}" direction="all" bindtap="gotoMicbooks">
-            微图书
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+100}}" y="{{y}}" direction="all">
-            工时系统
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+200}}" y="{{y}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x}}" y="{{y+100}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+100}}" y="{{y+100}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+200}}" y="{{y+100}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x}}" y="{{y+200}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+100}}" y="{{y+200}}" direction="all">
-        </movable-view>
-        <movable-view class="app-cell" x="{{x+200}}" y="{{y+200}}" direction="all">
-        </movable-view>
-    </movable-area>
+    <view class="content">
+        <view class="app-cell" bindtap="gotoMicbooks">微图书</view>
+        <view class="app-cell">工时系统</view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+        <view class="app-cell"></view>
+    </view>
 </view>
